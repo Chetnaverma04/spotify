@@ -5,45 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
 </head>
 
 <body>
     <div class="container flex bg-black">
         <div class="left ">
             <div class="close">
-                <img class="invert" src="close.svg" alt="">
+                <img class="invert" src="svg/close.svg" alt="">
             </div>
             <div class="home bg-grey rounded m1 p1">
-                <div class="logo"><img width="150" class="invert" src="logo.svg" alt=""></div>
+                <div class="logo"><img width="150" class="invert" src="svg/logo.svg" alt=""></div>
                 <ul>
-                    <li><img class="invert" src="home.svg" alt="home">Home</li>
-                    <li><img class="invert" src="search.svg" alt="search">Search</li>
+                    <li><img class="invert" src="svg/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="svg/search.svg" alt="search">Search</li>
+                
                 </ul>
             </div>
             <div class="library bg-grey rounded m1 p1">
                 <div class="heading">
-                    <img class="invert" src="playlist.svg" alt="">
+                    <img class="invert" src="svg/playlist.svg" alt="">
+                    
                     <h2>
                         Your library
                     </h2>
                 </div>
-
                 <div class="songList">
                     <ul>
-                        <!-- <li>
-                            <img class="invert" src="music.svg" alt="">
-                            <div class="info">
-                                <div>song Name</div>
-                                <div>song Artist</div>
-                            </div>
-                            <div class="playnow">
-                                <span>Play Now</span>
-                                <img class ="invert" src="play.svg" alt="">
-                            </div>
-                        </li> -->
-                        <!-- <li>Song Name</li> -->
+                    
                     </ul>
                 </div>
 
@@ -64,7 +54,7 @@
             <div class="header">
                 <div class="nav">
                     <div class="hamburgerContainer">
-                        <img width=30 class="hamburger" src="hamburger.svg" alt="">
+                        <img width=30 class="hamburger" src="svg/hamburger.svg" alt="">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
                             color="#000000" fill="none">
                             <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#ffffff"
@@ -83,10 +73,14 @@
                     <button class="loginbtn">Log In</button>
                 </div>
             </div>
+
+
+
+
             <div class="spotifyPlaylists">
                 <h1>Spotify Playlists</h1>
                 <div class="card-container">
-                    <div class="card">
+                    <div data-folder="spiritual.ncs" class="card">
                         <div class="play">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
                                 color="#000000" fill="none"
@@ -97,11 +91,13 @@
                             </svg>
 
                         </div>
-                        <img src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de" alt="">
-                        <h2>Dinner with Friends</h2>
-                        <p>The perfect soundtrack to those long nights over dinner</p>
+
+                        
+                        <img src="img/cover10.jpeg">
+                        <h2>Spiritual Song</h2>
+                        <p>Healing Meditation,Positive Energy, Empower Your Soul.</p>
                     </div>
-                    <div data-folder="cs" class="card">
+                    <div data-folder="dark.ncs" class="card">
                         <div class="play">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
                                 color="#000000" fill="none"
@@ -112,11 +108,11 @@
                             </svg>
 
                         </div>
-                        <img src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de" alt="">
-                        <h2>Dinner with Friends</h2>
+                        <img src="img/cover9.jpg" alt="">
+                        <h2>Dark Vibes Song</h2>
                         <p>The perfect soundtrack to those long nights over dinner</p>
                     </div>
-                    <div data-folder="cs" class="card">
+                    <div data-folder="chill.ncs" class="card">
                         <div class="play">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
                                 color="#000000" fill="none"
@@ -127,13 +123,120 @@
                             </svg>
 
                         </div>
-                        <img src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de" alt="">
-                        <h2>Dinner with Friends</h2>
+
+                        
+                        <img src="img/cover8.jpeg" alt="">
+                        <h2>Chill Songs</h2>
+                        <p>The perfect soundtrack to those long nights over dinner</p>
+                    </div>
+                    <div data-folder="as.ncs" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                                color="#000000" fill="none"
+                                style="background-color: green; border-radius: 50%; padding: 5px;">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+
+                        
+                        <img src="img/cover7.webp" alt="">
+                        <h2>Arjit Singh Songa</h2>
+                        <p>The perfect soundtrack to those long nights over dinner</p>
+                    </div>
+                    <div data-folder="bollywood.ncs" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                                color="#000000" fill="none"
+                                style="background-color: green; border-radius: 50%; padding: 5px;">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <img src="img/cover6.jpg" alt="">
+                        <h2>Bollywood Songs</h2>
                         <p>The perfect soundtrack to those long nights over dinner</p>
                     </div>
 
+                    <div data-folder="hollywood.ncs" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                                color="#000000" fill="none"
+                                style="background-color: green; border-radius: 50%; padding: 5px;">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
 
+                        </div>
+                        <img src="img/cover5.jpeg" alt="">
+                        <h2>Hollywood Songs</h2>
+                        <p>The perfect soundtrack to those long nights over dinner</p>
+                    </div>
+                    <div data-folder="sad.ncs" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                                color="#000000" fill="none"
+                                style="background-color: green; border-radius: 50%; padding: 5px;">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
 
+                        </div>
+                        <img src="img/cover4.jpeg" alt="">
+                        <h2>Sad Songs</h2>
+                        <p>The perfect soundtrack to those long nights over dinner</p>
+                    </div>
+                    <div data-folder="romantic.ncs" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                                color="#000000" fill="none"
+                                style="background-color: green; border-radius: 50%; padding: 5px;">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <img src="img/cover3.webp" alt="">
+                        <h2>Romantic Songs</h2>
+                        <p>The perfect soundtrack to those long nights over dinner</p>
+                    </div>
+                    <div data-folder="vibes.ncs" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                                color="#000000" fill="none"
+                                style="background-color: green; border-radius: 50%; padding: 5px;">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <img src="img/cover2..jpg" alt="">
+                        <h2>Vibes</h2>
+                        <p>The perfect soundtrack to those long nights over dinner</p>
+                    </div>
+                    <div data-folder="angry.ncs" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                                color="#000000" fill="none"
+                                style="background-color: green; border-radius: 50%; padding: 5px;">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <img src="img/cover.jpg" alt="">
+                        <h2>Angry Songs</h2>
+                        <p>The perfect soundtrack to those long nights over dinner</p>
+                    </div>
 
 
                 </div>
@@ -149,9 +252,9 @@
 
                         </div>
                         <div class="songbtn">
-                            <img width="30" id="previous" src="presong.svg" alt="">
-                            <img width="30" id="play" src="play.svg" alt="">
-                            <img width="30" id="next" src="nextsong.svg" alt="">
+                            <img width="30" id="previous" src="svg/presong.svg" alt="">
+                            <img width="30" id="play" src="svg/play.svg" alt="">
+                            <img width="30" id="next" src="svg/nextsong.svg" alt="">
                         </div>
 
                         <div class="timevol">
@@ -160,12 +263,13 @@
     
                             </div>
                             <div class="volume">
-                                <img src="volume.svg" alt="">
+                                <img src="svg/volume.svg" alt="">
                                 
                                 <div class="range">
                                     <input type="range" name="volume" id="">
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
